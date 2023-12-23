@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #edfffd;
+  }
+  
+  section {
+    display: flex;
+    gap: 4rem;
+    padding: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .first-div {
+    width: 460px;
+    height: 275px;
+    margin-top: 8rem;
+  }
+  
+  /* Styling the first div content */
+  
+  form {
+    background-color: #ffffff;
+    padding: 1.5rem;
+  }
+  
+  img {
+    width: 77px;
+    height: 80px;
+    margin-bottom: 20px;
+    margin-left: -10px;
+  }
+  
+  h3 {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 100px;
+  }
+  
+  .paragraph {
+    color: #737373;
+    font-size: 16px;
+    line-height: 25px;
+    font-weight: 400;
+  }
+  
+  .paragraph-mobile {
+    display: none;
+  }
+  
+  button {
+    background-color: #2ec4b6;
+  }
+  
+  /* Inner-form styling */
+  .name,
+  .options,
+  .bmi {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 1.5rem;
+    justify-content: space-evenly;
+  }
+  
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 35px;
+  }
+  input,
+  #dropdown {
+    width: 13rem;
+    height: 2.7rem;
+  }
+  
+  #activity,
+  #password,
+  button {
+    width: 29rem;
+    height: 48px;
+    margin-bottom: 25px;
+  }
+  
+  button {
+    color: white;
+    border: none;
+  }
+  
+  .grouped {
+    width: 33rem;
+    padding-left: 2rem;
+  }
+  
+  span a {
+    color: #2ec4b6;
+  }
+  
+  .form-footer-mobile {
+    display: none;
+  }
+  
+  
+  
+  
+  
+  
+  
+  /** MEDIA QUERY ***/
+  
+  @media (max-width: 425px) {
+    section {
+      flex-direction: column;
+      padding: 2rem;
+      gap: 2rem;
+    }
+  
+    .paragraph {
+      display: none;
+    }
+  
+    .paragraph-mobile {
+      display: block;
+      width: 23rem;
+      color: #737373;
+      font-size: 16px;
+      line-height: 25px;
+      font-weight: 400;
+    }
+  
+    input,
+    #dropdown {
+      width: 20rem;
+      height: 2.7rem;
+    }
+  
+    .name,
+    .options,
+    .bmi {
+      flex-direction: column;
+    }
+  
+    .grouped {
+      width: 20rem;
+      padding-left: 0;
+    }
+  
+    #activity,
+    #password,
+    button {
+      width: 20rem;
+      height: 48px;
+      margin-bottom: 25px;
+    }
+  
+    form .form-footer {
+      display: none;
+    }
+  
+    .form-footer-mobile {
+      display: block;
+      text-align: center;
+      margin: 2rem 0 3rem 0;
+      font-size: 14px;
+    }
+  
+    .first-div {
+      width: 23rem;
+      margin-top: 4rem;
+    }
+  
+    form {
+      background-color: #ffffff;
+      padding: 1em;
+      width: 22rem;
+    }
+  }
+  
